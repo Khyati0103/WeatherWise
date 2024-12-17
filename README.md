@@ -73,4 +73,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # WeatherWise(Frontend)
 
 WeatherWise is a Weather predicting Website with an integrated AI powered chatbot.
+<<<<<<< HEAD
 >>>>>>> 0eda32ea1fb43c900188fbbedaaf35921373be43
+=======
+
+<<<<<<< HEAD
+// Your local content in README.md
+=======
+<Remote repository's content in README.md>
+>>>>>>> main
+>>>>>>> 2668ebd622c609f449a096216c4fce7c8c1ff3be
