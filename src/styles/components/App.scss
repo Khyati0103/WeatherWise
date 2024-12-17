@@ -1,0 +1,23 @@
+@use '../base/reset';
+@use '../themes/themes';
+@use '../variables/variables' as *;
+
+.App {
+  margin: 0 7rem;
+  padding: 20px 0;
+  height: $main-height;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 821px) {
+    margin: 0 2rem;
+  }
+}
+.App-dark,
+.App-light {
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+
+  overflow: hidden;
+}

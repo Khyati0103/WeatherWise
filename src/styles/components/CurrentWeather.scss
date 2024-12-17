@@ -1,0 +1,167 @@
+@use '../variables/variables' as *;
+
+/* Light mode styles */
+.light-mode-bg {
+  background-image: url('../../Components/Assets/light.png'); /* Light mode background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.light-mode .CurrentWeather {
+  // background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent light card */
+  color: #000;  /* Text color for light mode */
+}
+
+/* Dark mode styles */
+.dark-mode-bg {
+  background-image: url('../../Components/Assets/dark1.png'); /* Dark mode background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.dark-mode .CurrentWeather {
+ background-color: rgba(0, 0, 0, 0.612);  /* Semi-transparent dark card */
+  color: #fff;  /* Text color for dark mode */
+  backdrop-filter: blur(200px);
+   border-radius: 10px;
+   width: 100%;
+  max-width: 500px;
+  height:625px;
+  padding: 75px;
+  place-self: center;
+  justify-content: center;
+}
+
+.container {
+      display: flex;
+      place-self: center;
+      justify-content: center;
+      align-items: center;
+      // padding: 20px;
+   
+      background-color: rgba(255,255,255,0.2);
+      backdrop-filter: blur(14px);
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      height:625px;
+      box-shadow: 0px 5px 15px rgba(129,124,124,0.2);
+    }
+    
+    .CurrentWeather {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    /* Temperature display */
+    .temperature_curr{
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 7px;
+      width:325px;
+    }
+    
+    /* Search bar styling */
+    .search-bar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 5px 10px;
+      background-color: #fff;
+    }
+    
+    .search-bar .searchicon {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      color: #888;
+    }
+    
+    /* .search-bar .searchinput {
+      flex-grow: 1;
+      margin-left: 10px;
+    } */
+    
+    .search-bar .search-inp input {
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      padding: 5px;
+      font-weight: 300;
+    }
+    
+    /* Weather icon section */
+    .weather-icon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    
+    /* Weather values (Temperature, humidity, wind, etc.) */
+    .value {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    
+    .value .real {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 27px;
+    }
+    
+    .value .humidity,
+    .value .precipitation,
+    .value .wind {
+      margin-bottom: 5px;
+      // color: #555;
+    }
+    
+    /* Weather summary (e.g., Sunny, Rainy, etc.) */
+    .summary{
+      font-size: 1.5rem;
+      font-weight: 500;
+      // color: #333;
+      margin-bottom: 15px;
+      margin-top:-1rem;
+    }
+    
+    /* Additional space for other information if needed */
+    
+  
+    .no-select {
+      user-select: none; /* For modern browsers */
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE 10+ */
+    }
+    
+    
+    /* Optional: Add hover or focus effects for the input field */
+    /* .search-bar input:focus {
+      border: 0px solid #888;
+      background-color: #f9f9f9;
+    } */
+    
+    /* Optional: Add some styles for responsiveness */
+    @media (max-width: 500px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+    
+      .value .real {
+        font-size: 2rem;
+      }
+    
+      .weather-icon {
+        font-size: 2.5rem;
+      }
+    
+      .summary_curr {
+        font-size: 1.2rem;
+      }
+    }
